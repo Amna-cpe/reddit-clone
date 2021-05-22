@@ -1,0 +1,25 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "root",
+   "database": "reddit",
+   "synchronize": false,
+   "logging": true,
+   "entities": [
+      "src/entities/**/*.ts"
+   ],
+   "migrations": [
+      "src/migrations/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscribers/**/*.ts"
+   ],
+   "seeds": ["src/seeds/**/*{.ts,.js}"],
+   "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations",
+      "subscribersDir": "src/subscribers"
+   }
+}
